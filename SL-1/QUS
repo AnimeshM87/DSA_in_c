@@ -1,0 +1,8 @@
+Wap to find out the smallest and the largest element sorted in an array of n integers using the Bubble Sort Algorithm.
+Wap to search an element on a static array of n numbers using linear Search.
+Let A be nxn square static matix.(q-3)
+Wap by using appropriate User Defined Function for the following:-
+(a)Find the number of non zero element
+(b)Find the sum of elements above the leading diagonal
+(c)Display the element below the minor diagonal
+(d)Find the product of diagonal elements
