@@ -29,12 +29,15 @@ void create()
 void display()
 {
     struct node *temp = head;
-
     while (temp != NULL)
     {
-        printf("%dx^%d", temp->cof, temp->exp);
+        printf("%dx^%d ", temp->cof, temp->exp);
         temp = temp->next;
-        printf(" + ");
+       if (temp!=NULL)
+       {
+         printf(" + ");
+       }
+              
     }
 }
 

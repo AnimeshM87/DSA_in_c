@@ -55,8 +55,7 @@ char pop(struct stack *ptr)
     if (isEmpty(ptr))
     {
         printf("Stack Underflow! Cannot pop from the stack\n");
-        return -1;
-    }
+            }
     else
     {
         char val = ptr->arr[top];
@@ -88,7 +87,7 @@ char *infixToPostfix(char *infix)
     sp->arr = (char *)malloc(sp->size * sizeof(char));
     char *postfix = (char *)malloc((strlen(infix) + 1) * sizeof(char));
     int i = 0; // Track infix traversal
-    int j = 0; // Track postfix addition
+    int j = 0; // Track postfix
     while (infix[i] != '\0')
     {
         if (!isOperator(infix[i]))
@@ -121,7 +120,15 @@ char *infixToPostfix(char *infix)
 }
 int main()
 {
-    char *infix = "x-y/z-k*d";//charecter array
+    char *infix = "a-b*c+d/e";//charecter array
+    int size= sizeof(infix);
+    printf("infix = ");
+     for (int i = 0; i < size+1; i++)
+    {
+        printf("%c",infix[i]);
+    }
+    printf("\n");
+    
     printf("postfix is %s", infixToPostfix(infix));
     return 0;
 }
